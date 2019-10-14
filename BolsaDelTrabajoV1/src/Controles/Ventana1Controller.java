@@ -48,8 +48,19 @@ public class Ventana1Controller implements Initializable  {
         
         Parent root=(Parent) loader.load();
         
+        Ventana2Controller controlador=loader.getController();
         
-        stage2.setScene(new Scene(root));
+        Scene scene=new Scene(root);
+        
+        stage2.setScene(scene);
+        
+        stage2.setOnCloseRequest(e -> controlador.closeWindows());
+        
+        Stage myStage=(Stage) this.btnEmpresa.getScena().getWindows();
+        
+        myStage.close();
+        
+        //stage2.setScene(new Scene(root));
         
         //stage2.alwaysOnTopProperty();
         
