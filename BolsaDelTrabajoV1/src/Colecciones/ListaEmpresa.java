@@ -13,8 +13,8 @@ import java.util.ArrayList;
  */
 public class ListaEmpresa {
     
-     private ArrayList empresas;
-    
+    private ArrayList empresas;
+    //asdfasdfasdfasdfasdf
     public ArrayList buscarTrabajos(String area,String region){
         
         ArrayList trabajosEncontrados=new ArrayList();
