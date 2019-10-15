@@ -35,7 +35,7 @@ public class BolsaDelTrabajoV1 extends Application{
     
     public void start(Stage stage) throws IOException{
         
-        Parent root = FXMLLoader.load(getClass().getResource("Vista.Ventana1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Vista/Ventana1.fxml"));
         
         Scene scene = new Scene(root);
         

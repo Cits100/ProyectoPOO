@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controles.Ventana2Controller">
    <children>
-      <Button layoutX="231.0" layoutY="140.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="138.0" text="Ingresar" />
-      <Button layoutX="230.0" layoutY="223.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="138.0" text="Registrarse" />
+      <Button layoutX="231.0" layoutY="140.0" mnemonicParsing="false" onAction="#ingresarEmpresa"  prefHeight="60.0" prefWidth="138.0" text="Ingresar" />
+      <Button layoutX="230.0" layoutY="223.0" mnemonicParsing="false" onAction="#ingresarPersona"  prefHeight="60.0" prefWidth="138.0" text="Registrarse" />
    </children>
 </AnchorPane>

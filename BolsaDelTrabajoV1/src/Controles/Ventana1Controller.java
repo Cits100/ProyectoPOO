@@ -14,6 +14,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -32,50 +33,88 @@ public class Ventana1Controller implements Initializable  {
      */
     
     @FXML
-    private Button boton;
-    
+    private Button btnEmpresa;
     @FXML
-    private Label etiqueta;
+    private Button btnPersona;
     
+   
     
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
     @FXML
-    private void handleButtonAction(ActionEvent event)throws IOException {
+    private void ingresoEmpresa(ActionEvent event) {
         
       try{  
-        Stage stage2=new Stage();
+          
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("/Vista/Ventana2.fxml"));
         
-        FXMLLoader loader=new FXMLLoader(getClass().getResource("Vista.Ventana2.fxml"));
-        
-        Parent root=(Parent) loader.load();
+        Parent root= loader.load();
         
         Ventana2Controller controlador=loader.getController();
         
         Scene scene=new Scene(root);
         
+        Stage stage2=new Stage();
+        
         stage2.setScene(scene);
+        
+        stage2.show();
         
         stage2.setOnCloseRequest(e -> controlador.closeWindows());
         
-        Stage myStage=(Stage) this.btnEmpresa.getScena().getWindows();
+        //Node node=(Node) event.getSource();
         
-        myStage.close();
+        //Stage myStage=(Stage) node.getScene().getWindow();
         
-        //stage2.setScene(new Scene(root));
-        
+        //myStage.close();
         //stage2.alwaysOnTopProperty();
         
         //stage2.initModality(Modality.NONE);
         
-        stage2.show();
+        
       }catch (Exception e){
           
           System.out.println("No se pudo abrir la ventana");
           
       }
     }
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+    @FXML
+    private void ingresoPersona(ActionEvent event) {
+        
+      try{  
+        
+        
+        FXMLLoader loader=new FXMLLoader(getClass().getResource("/Vista/Ventana4.fxml"));
+        
+        Parent root= loader.load();
+        
+        Ventana3Controller controlador=loader.getController();
+        
+        Scene scene=new Scene(root);
+        
+        Stage stage2=new Stage();
+        
+        stage2.setScene(scene);
+        
+        stage2.show();
+        
+        stage2.setOnCloseRequest(e -> controlador.closeWindows());
+        
+        //Stage myStage=(Stage) this.btnPersona.getScene().getWindow();
+        
+        //myStage.close();
+        //stage2.alwaysOnTopProperty();
+        
+        //stage2.initModality(Modality.NONE);
+        
+        
+      }catch (Exception e){
+          
+          System.out.println("No se pudo abrir la ventana");
+          
+      }
+    }
     
 }
