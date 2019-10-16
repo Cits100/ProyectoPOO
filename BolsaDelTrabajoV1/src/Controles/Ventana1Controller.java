@@ -74,7 +74,7 @@ public class Ventana1Controller implements Initializable  {
         //stage2.initModality(Modality.NONE);
         
         
-      }catch (Exception e){
+      }catch (IOException ex){
           
           System.out.println("No se pudo abrir la ventana");
           
@@ -90,7 +90,7 @@ public class Ventana1Controller implements Initializable  {
         
         Parent root= loader.load();
         
-        Ventana3Controller controlador=loader.getController();
+        Ventana4Controller controlador=loader.getController();
         
         Scene scene=new Scene(root);
         
@@ -110,7 +110,7 @@ public class Ventana1Controller implements Initializable  {
         //stage2.initModality(Modality.NONE);
         
         
-      }catch (Exception e){
+      }catch (Exception ex){
           
           System.out.println("No se pudo abrir la ventana");
           

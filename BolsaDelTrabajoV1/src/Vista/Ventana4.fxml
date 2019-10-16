@@ -6,6 +6,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controles.Ventana4Controller">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controles.Ventana4Controller">
+   <children>
+      <Button layoutX="248.0" layoutY="127.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="111.0" text="Ingresar" />
+      <Button layoutX="248.0" layoutY="218.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="111.0" text="Registrarse" />
+   </children>
 </AnchorPane>

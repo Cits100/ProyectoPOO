@@ -52,7 +52,7 @@ public class Ventana2Controller implements Initializable {
         
         Parent root= loader.load();
         
-        Ventana2Controller controlador=loader.getController();
+        Ventana3Controller controlador=loader.getController();
         
         Scene scene=new Scene(root);
         
